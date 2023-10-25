@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="books.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="imgs/black-heart_1f5a4 (1).png" class="heart-img">
+        <h1>Maria's Library</h1>
+        <img src="imgs/black-heart_1f5a4 (1).png" class="heart-img">
+    </header>
+    <main> 
+        <form id="book-shelf">
+            <p class="title bool-shelf "> Book Title: 
+                <input id="InTitle" type="text" autofocus required>
+            </p>
+            <p class="author bool-shelf "> Book Author: 
+                <input id="InAuthor" type="text" required>
+            </p>
+            <p class="pages bool-shelf "> Book Pages: 
+                <input id="InPages" type="number" min="1" required>
+            </p>
+            <p class="read bool-shelf ">
+                <label for="readYes">Already read the book?</label>
+                <input id="readYes" type="checkbox" name="haveRead" value="Read">
+            </p>
+        </form>
+        <button id="submit">Submit</button>
+        <h3>My Library so far...</h3>
+        <div id="table-div">
+            <table id="booktable">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read</th>
+                    <th>Delete</th>
+                </tr>
+                <tbody id="js-table"></tbody>
+            </table>
+            </div>
+ 
+
+    </main>
+</body>
+</html>

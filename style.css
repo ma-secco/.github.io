@@ -1,0 +1,84 @@
+:root {
+    --branco: #E5E5E5;
+    --bordo: #612C40;
+    --preto:  #202020;
+    --tamanho-fonte: 16px;
+  }  
+
+body{
+    background-color:var(--branco);
+    margin: 0.8%;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
+.heart-img{
+    height:2.5rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 90%;
+}
+h1{
+    font-size: 3rem;
+    color:var(--bordo)
+}
+p {
+    margin: 0,5;
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color:var(--preto);
+    color: var(--branco);
+    height:30px;
+    width: 80px;
+}
+#table-div {
+    display: block;
+    width: 75%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 18px;
+    width: 100%;
+    outline: thin solid rgb(172, 172, 172);
+
+}
+
+
+td, th {
+    background-color: var(--branco);
+    color: var(--bordo);
+    border-bottom: thin solid rgb(172, 172, 172);
+    padding: 0.5rem;
+    text-align: center;
+    padding: 10px 25px;
+}
+
+th{
+    background-color: var(--bordo);
+    color: var(--branco);
+}
+
+
